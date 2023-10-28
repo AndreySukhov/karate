@@ -1,0 +1,92 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+body,
+html {
+   background-color: var(--mainBg);
+    scroll-behavior: smooth;
+    font-family: 'GT-Walsheim-Pro', serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+html.fixed,
+body.fixed {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: opacity 0.15s ease-out;
+}
+
+.button {
+    background: var(--orange);
+    color: var(--white);
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    padding: 20px;
+    min-width: 220px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.15s ease-out;
+}
+
+.button:hover,
+a:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1480px) {
+    .button {
+        min-width: 130px;
+        padding: 12px;
+        font-size: 0.91rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .button {
+        font-size: 0.81rem;
+    }
+}

@@ -1,0 +1,19 @@
+@import "sanitize.css/sanitize.css";
+@import "@glidejs/glide/dist/css/glide.core.css";
+@import "@glidejs/glide/dist/css/glide.theme.css";
+@import "./fonts.css";
+@import "./variables.css";
+@import "./base.css";
+@import "./typography.css";
+@import "./layout.css";
+
+@import "./footer.css";
+@import "./header.css";
+@import "./no-limits.css";
+@import "./conditions.css";
+@import "./agency.css";
+@import "traditions.css";
+@import "./philosophy.css";
+
+@import "./slider.css";
+@import "./quote.css";

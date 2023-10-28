@@ -1,0 +1,163 @@
+.traditions-img {
+    text-align: center;
+}
+
+.traditions-img img {
+    max-width: 100%;
+}
+
+.traditions-scheme {
+    max-width: 1190px;
+    margin: 0 auto;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.traditions-scheme__content {
+    padding: 75px 50px 55px 50px;
+    text-align: center;
+}
+
+.traditions-scheme__footer {
+    border-bottom: 10px solid var(--orange);
+    margin-top: auto;
+}
+
+.traditions-scheme {
+    color: var(--black);
+}
+
+.traditions-scheme__title {
+    margin-bottom: 50px;
+}
+
+.traditions-scheme__link {
+    margin-bottom: 50px;
+}
+
+.traditions-scheme__link a {
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--orange);
+    color: var(--black);
+}
+
+.traditions-list {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    align-items: flex-start;
+    grid-gap: 0 50px;
+    justify-content: center;
+}
+
+.traditions-list {
+    margin-bottom: 50px;
+}
+
+.traditions-list li {
+    text-align: center;
+}
+
+.traditions-list:last-of-type {
+    margin-bottom: 0;
+}
+
+.traditions-list-item__img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.traditions-list-item__point {
+    width: 10px;
+    height: 10px;
+    background-color: var(--black);
+    transform: rotate(45deg);
+    position: relative;
+    z-index: 2;
+}
+
+.traditions-list-item__point-wrap {
+    position: relative;
+    z-index: 2;
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: var(--white);
+}
+
+.traditions-list li:last-of-type .traditions-list-item__point-wrap:after {
+    content: none;
+}
+
+.traditions-list-item__point-wrap:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px dashed #808080;
+    left: 100%;
+    top: 5px;
+    width: 200px;
+}
+
+.traditions-list-item__footer a {
+    color: var(--orange);
+}
+
+.traditions-scheme__wrap {
+    transform: translateY(-150px);
+    margin-bottom: -150px;
+}
+
+@media (max-width: 1480px) {
+    .traditions-scheme__content {
+        padding: 75px 50px 50px 50px;
+    }
+
+    .traditions-scheme {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .traditions-scheme__wrap {
+        transform: translateY(-100px);
+        margin-bottom: -100px;
+    }
+
+    .traditions-list {
+        grid-gap: 0 40px;
+    }
+
+    .traditions-list-item__point-wrap:after {
+        width: 140px;
+    }
+
+    .traditions-list__wrap {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .traditions-list--points {
+        display: none;
+    }
+
+    .traditions-scheme__content {
+        padding: 35px 14px;
+    }
+
+    .traditions-scheme__title {
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .traditions-list {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,139 @@
+.philosophy__title {
+    margin-bottom: 100px;
+}
+
+.philosophy__wrap {
+    display: grid;
+    grid-template-columns: 750px 1fr;
+    justify-content: space-between;
+    grid-gap: 0 50px;
+}
+
+.philosophy__tab-option-mark {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.philosophy__tabs {
+    display: grid;
+    grid-gap: 80px;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-template-columns: 135px 530px;
+}
+
+.philosophy__tabs-contents {
+    color: var(--black);
+}
+
+.philosophy__tabs-contents__item {
+    display: none;
+}
+
+.philosophy__tabs-contents__item.active {
+    display: block;
+}
+
+.philosophy__tab-option {
+    background: transparent;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.philosophy__img img {
+    max-width: 100%;
+}
+
+.philosophy__tabs-options li:last-of-type .philosophy__tab-option {
+    margin-bottom: 0;
+}
+
+.philosophy__tab-option.active {
+    color: var(--black);
+}
+
+.philosophy__tab-option-mark {
+    display: none;
+    color: var(--orange);
+    left: 100%;
+    bottom: 100%;
+    position: absolute;
+    writing-mode: vertical-lr;
+}
+
+.philosophy__tab-option.active .philosophy__tab-option-mark {
+    display: block;
+}
+
+@media (max-width: 1480px) {
+    .philosophy__wrap {
+        display: block;
+    }
+
+    .philosophy__title {
+        margin-bottom: 25px;
+        max-width: 840px;
+    }
+
+    .philosophy__tabs {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    .philosophy__tabs-options-wrap {
+        overflow-x: auto;
+        margin-bottom: 15px;
+    }
+
+    .philosophy__tabs-options {
+        display: flex;
+    }
+
+    .philosophy__tabs-options li {
+        margin-right: 25px;
+    }
+
+    .philosophy__tab-option {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        white-space: nowrap;
+        font-size: 0.81rem;
+        margin-bottom: 0;
+    }
+
+    .philosophy__tab-option-mark {
+        display: inline-block;
+        position: static;
+        writing-mode: lr;
+    }
+
+    .philosophy__tabs-contents {
+        max-width: 450px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .philosophy__title {
+        margin-bottom: 20px;
+    }
+
+    .philosophy__tab-option {
+        font-size: 0.62rem;
+    }
+
+    .philosophy__tabs-contents__item {
+        font-size: 0.81rem;
+    }
+
+    .philosophy__tabs {
+        margin-bottom: 10px;
+    }
+}
