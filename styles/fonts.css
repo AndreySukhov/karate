@@ -2,24 +2,24 @@
     font-family: 'GT-Walsheim-Pro';
     font-weight: 500;
     font-style: normal;
-    src: url("./fonts/GT-Walsheim-Pro-Medium.woff2") format('woff2');
+    src: url("fonts/GT-Walsheim-Pro-Medium.woff2") format('woff2');
 }
 @font-face {
     font-family: 'GT-Walsheim-Pro';
     font-weight: 500;
     font-style: oblique;
-    src: url("./fonts/GT-Walsheim-Pro-Medium-Oblique.woff2") format('woff2');
+    src: url("fonts/GT-Walsheim-Pro-Medium-Oblique.woff2") format('woff2');
 }
 
 @font-face {
     font-family: 'GT-Walsheim-Pro-Condensed';
     font-weight: 500;
     font-style: normal;
-    src: url("./fonts/GT-Walsheim-Pro-Condensed-Medium.woff2") format('woff2');
+    src: url("fonts/GT-Walsheim-Pro-Condensed-Medium.woff2") format('woff2');
 }
 @font-face {
     font-family: 'GT-Walsheim-Pro-Condensed';
     font-weight: 500;
     font-style: oblique;
-    src: url("./fonts/GT-Walsheim-Pro-Condensed-Medium-Oblique.woff2") format('woff2');
+    src: url("fonts/GT-Walsheim-Pro-Condensed-Medium-Oblique.woff2") format('woff2');
 }
