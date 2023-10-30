@@ -54,3 +54,21 @@ agencySlider.on(['mount.after', 'run'], () => {
     agencyCurrent.innerHTML = currentIndex;
     setTrackWidth(agencyTrack, currentIndex, agencySlides)
 })
+
+document.querySelectorAll('.js-quote-preview-img').forEach((img) => {
+    img.addEventListener('click', (e) => {
+        agencySlider.go('>')
+    })
+})
+
+document.querySelectorAll('.js-conditions-slide__image').forEach((img) => {
+    img.addEventListener('click', (e) => {
+        conditionsSlider.go('>')
+    })
+})
+
+document.querySelectorAll('.js-no-limits-img').forEach((img) => {
+    img.addEventListener('click', (e) => {
+        limitsSlider.go('>')
+    })
+})

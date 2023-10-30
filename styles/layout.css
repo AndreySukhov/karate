@@ -12,6 +12,10 @@
 }
 
 .page-content-row-fixer {
+    padding: 0 100px;
+}
+
+.page-content-row-fixer--header {
     padding: 0 50px;
 }
 

@@ -17,7 +17,7 @@
     display: grid;
     grid-gap: 80px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
     grid-template-columns: 135px 530px;
 }
 
