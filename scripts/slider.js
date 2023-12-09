@@ -1,8 +1,14 @@
 import Glide from '@glidejs/glide';
 
+const quoteButtons =  document.querySelectorAll('.js-quote-preview');
+
 const setTrackWidth = (el, currentIndex, total) => {
-    el.style.width = `${(currentIndex/total) * 100}%`
+    setTimeout(() => {
+        el.style.width = `${(currentIndex/total) * 100}%`
+    }, 400)
 }
+
+
 
 const limitsSlider = new Glide('.js-no-limits-slider').mount();
 const conditionsSlider = new Glide('.js-conditions-slider').mount();
@@ -23,15 +29,22 @@ const agencyTotal = document.querySelector('.js-agency-slider-total')
 const agencySlides = document.querySelector('.js-agency-slides').children.length
 const agencyCurrent = document.querySelector('.js-agency-slider-current');
 const agencyTrack = document.querySelector('.js-agency-slider-track');
+const formatSlidesNum = (num) => {
+    if (num < 10) {
+        return `0${num}`
+    }
+    return num
+}
 
-limitsTotal.innerHTML = totalNoLimitsSlides
-limitsCurrent.innerHTML = 1;
 
-conditionsTotal.innerHTML = conditionsSlides;
-conditionsCurrent.innerHTML = 1;
+limitsTotal.innerHTML =  formatSlidesNum(totalNoLimitsSlides);
+limitsCurrent.innerHTML = formatSlidesNum(1);
 
-agencyTotal.innerHTML = agencySlides;
-agencyCurrent.innerHTML = 1;
+conditionsTotal.innerHTML = formatSlidesNum(conditionsSlides);
+conditionsCurrent.innerHTML = formatSlidesNum(1);
+
+agencyTotal.innerHTML = formatSlidesNum(agencySlides);
+agencyCurrent.innerHTML = formatSlidesNum(1);
 
 setTrackWidth(limitsTrack, 1, totalNoLimitsSlides)
 setTrackWidth(conditionsTrack, 1, conditionsSlides)
@@ -39,20 +52,36 @@ setTrackWidth(agencyTrack, 1, agencySlides)
 
 limitsSlider.on(['mount.after', 'run'], () => {
     const currentIndex = limitsSlider.index + 1;
-    limitsCurrent.innerHTML = currentIndex;
+    limitsCurrent.innerHTML = formatSlidesNum(currentIndex);
     setTrackWidth(limitsTrack, currentIndex, totalNoLimitsSlides)
 })
 
 conditionsSlider.on(['mount.after', 'run'], () => {
     const currentIndex = conditionsSlider.index + 1;
-    conditionsCurrent.innerHTML = currentIndex;
+    conditionsCurrent.innerHTML = formatSlidesNum(currentIndex);
     setTrackWidth(conditionsTrack, currentIndex, conditionsSlides)
 })
 
+const quoteMobile = document.querySelector('.js-quote');
+const quoteMobileAvatar = quoteMobile.querySelector('.js-quote-avatar')
+const quoteMobileText = quoteMobile.querySelector('.js-quote-text');
+const quoteMobileDescription = quoteMobile.querySelector('.js-quote-description');
+
 agencySlider.on(['mount.after', 'run'], () => {
     const currentIndex = agencySlider.index + 1;
-    agencyCurrent.innerHTML = currentIndex;
+    agencyCurrent.innerHTML = formatSlidesNum(currentIndex);
     setTrackWidth(agencyTrack, currentIndex, agencySlides)
+
+    if (quoteMobile.classList.contains('active')) {
+        quoteMobileAvatar.src = '';
+
+        quoteMobileText.innerText = '';
+        quoteMobileDescription.innerText = '';
+        quoteMobile.classList.remove('active');
+        quoteButtons.forEach((btn) => {
+            btn.style.display = 'block';
+        });
+    }
 })
 
 document.querySelectorAll('.js-quote-preview-img').forEach((img) => {

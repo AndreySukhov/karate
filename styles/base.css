@@ -70,11 +70,42 @@ a {
     border: none;
     cursor: pointer;
     transition: opacity 0.15s ease-out;
+    font-family: 'GT-Walsheim-Pro', serif;
+    font-weight: 500;
+}
+
+button {
+    font-family: 'GT-Walsheim-Pro', serif;
+    font-weight: 500;
 }
 
 .button:hover,
 a:hover {
     opacity: 0.5;
+}
+
+@media (min-width: 1025px) {
+    .glide__slides {
+        transform: translate3d(0, 0, 0) !important;
+    }
+
+    .glide__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        order: 2;
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .glide__slide.glide__slide--active {
+        position: relative;
+        order: 1;
+        opacity: 1;
+        z-index: 1;
+    }
 }
 
 @media (max-width: 1480px) {
@@ -88,5 +119,19 @@ a:hover {
 @media (max-width: 1024px) {
     .button {
         font-size: 0.81rem;
+    }
+}
+
+.mobile-visible {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-visible {
+        display: block;
     }
 }

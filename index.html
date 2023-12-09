@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./favicon.ico" sizes="32x32">
+    <link rel="icon" href="./favicon.ico" sizes="32x32" type="image/x-icon">
     <link rel="apple-touch-icon" href="./apple-touch-icon.png">
     <link rel="manifest" href="./manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,8 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no">
-    <title>Ikemiyagi dojo</title>
+    <meta name="description" content="Официальное представительство Грандмастера Окинавского каратэ Годзю-рю Масааки Икемияги в Москве">
+    <meta name="keywords" content="Дмитрий Рыбаков, годзю-рю, Ikemiyagi dojo, Икемияги Додзё Москва, каратэ, окинавское каратэ, традиционное каратэ">
+    <title>Икемияги Додзё</title>
   </head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(95799299, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/95799299" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <body class="page-wrapper">
     <header class="page-header">
       <div class="page-content-row-fixer page-content-row-fixer--header">
@@ -25,18 +44,17 @@
               <div class="nav-mobile">
                 <div class="nav-controls">
                     <button class="header-close-button js-header-close-button">
-                      <span class="header-nav-button__line"></span>
-                      <span class="header-nav-button__line"></span>
+                      <img src="./icons/x.svg" alt="">
                     </button>
-                  <a href="tel:+79055580440" class="button">Записаться</a>
+                  <a href="tel:+79856100010" class="button">Записаться</a>
                 </div>
               </div>
-            <ul class="header-nav-list text--uppercase">
+            <ul class="header-nav-list js-header-nav-list text--uppercase">
               <li class="header-nav-list__item">
                 <a href="#philosophy">Философия</a>
               </li>
               <li class="header-nav-list__item">
-                <a href="#traditions">Наследие Традиций</a>
+                <a href="#traditions">Наследие традиций</a>
               </li>
               <li class="header-nav-list__item">
                 <a href="#agency">Представительство в Москве</a>
@@ -45,26 +63,29 @@
                 <a href="#conditions">Условия для тренировок</a>
               </li>
               <li class="header-nav-list__item">
-                <a href="#general">Карате Без Границ</a>
+                <a href="#general">каратэ без границ</a>
               </li>
               <li class="header-nav-list__item">
-                <a href="#contacts">контактная информация</a>
+                <a href="#contacts">Контактная информация</a>
               </li>
             </ul>
             <div class="nav-mobile nav-contacts">
               <div class="nav-contacts-row">
                 <a href="https://yandex.ru/maps/-/CDaPE847" target="_blank">
                   123317 Москва, <br/>
-                  ул. Литвина-Седого, 3А
+                  ул. Литвина-Седого, 3А <br />
+                  метро "улица 1905 года"
                 </a>
               </div>
               <div class="nav-contacts-row">
-                <a href="tel:+79055580440">+7-905-558-04-40</a>
-                <a href="mailto:wma@wmaclub.ru">wma@wmaclub.ru</a>
+                <a href="tel:+79856100010">+7 985 610 00 10</a>
+                <div>
+                  <a href="mailto:info@ikemiyagi-dojo.ru">info@ikemiyagi-dojo.ru</a>
+                </div>
               </div>
             </div>
           </div>
-          <a href="tel:+79055580440" class="button">Записаться</a>
+          <a href="tel:+79856100010" class="button">Записаться</a>
         </nav>
       </div>
       <div class="page-content-row-fixer">
@@ -76,13 +97,17 @@
             </h1>
             <p class="header-description">
               Официальное представительство
-              Грандмастера Окинавского карате
+              Грандмастера Окинавского каратэ
               Годзю-рю Масааки Икемияги
             </p>
           </div>
         </div>
       </div>
-      <video src="./header/hd0992.mov" class="header-bg" muted autoplay loop></video>
+      <video poster="./header/video_cover.jpg"
+              src="./header/rf31.mp4"
+              class="header-bg"
+              playsinline
+              muted autoplay loop></video>
     </header>
     <main>
       <div class="page-content-row-fixer" id="philosophy">
@@ -96,7 +121,7 @@
                 Московская школа
                 Ikemiyagi Dojo берёт за основу
                 ценности Традиционного
-                Окинавского карате.
+                Окинавского каратэ.
               </h2>
               <div class="philosophy__tabs">
                 <div class="philosophy__tabs-options-wrap">
@@ -105,9 +130,9 @@
                       <button
                               data-tab="1"
                               class="js-philosophy__tab-option philosophy__tab-option active">
-                        традиции
+                        уважение
                         <span class="philosophy__tab-option-mark">
-                        集中
+                        尊敬
                       </span>
                       </button>
                     </li>
@@ -115,9 +140,9 @@
                       <button
                               data-tab="2"
                               class="js-philosophy__tab-option philosophy__tab-option">
-                        уважение
+                        воинское искусство
                         <span class="philosophy__tab-option-mark">
-                        集中
+                        武道
                       </span>
                       </button>
                     </li>
@@ -125,9 +150,9 @@
                       <button
                               data-tab="3"
                               class="js-philosophy__tab-option philosophy__tab-option">
-                        воинское искусство
+                        вне возраста
                         <span class="philosophy__tab-option-mark">
-                        集中
+                        老若男女
                       </span>
                       </button>
                     </li>
@@ -135,9 +160,9 @@
                       <button
                               data-tab="4"
                               class="js-philosophy__tab-option philosophy__tab-option">
-                        свобода
+                        тело и дух
                         <span class="philosophy__tab-option-mark">
-                        集中
+                        心身の鍛錬
                       </span>
                       </button>
                     </li>
@@ -145,9 +170,9 @@
                       <button
                               data-tab="5"
                               class="js-philosophy__tab-option philosophy__tab-option">
-                        тело и дух
+                        совершенство
                         <span class="philosophy__tab-option-mark">
-                        集中
+                        完璧な空手
                       </span>
                       </button>
                     </li>
@@ -155,103 +180,202 @@
                 </div>
                 <ul class="philosophy__tabs-contents text--xl">
                   <li class="philosophy__tabs-contents__item js-philosophy__tabs-contents__item active" data-tab="1">
-                    Известная каллиграфия гласит: «Уважай старшего, уважай младшего, уважай Учителя, уважай своего
-                    ученика». Без взаимного уважения невозможна передача традиционных знаний.
+                    Уважай своего Учителя, уважай тех, с кем ты тренируешься, уважай своего противника, тех, кто старше тебя, тех, кто младше тебя, кто сильнее тебя, кто слабее тебя. Без уважения нет роста. Без уважения Каратэ — не Путь, а обычная драка!
                   </li>
                   <li class="philosophy__tabs-contents__item js-philosophy__tabs-contents__item" data-tab="2">
-                    Известная1 каллиграфия гласит: «Уважай старшего, уважай младшего, уважай Учителя, уважай своего
-                    ученика». Без взаимного уважения невозможна передача традиционных знаний.
+                    Традиционное каратэ — не спорт, а воинское искусство! В каратэ-до нет сравнений. Не важно сколько раз ты побеждал или проигрывал в бою. Есть только Путь самосовершенствования, Путь преодоления собственных страхов и слабостей.
                   </li>
                   <li class="philosophy__tabs-contents__item js-philosophy__tabs-contents__item" data-tab="3">
-                    Известная2 каллиграфия гласит: «Уважай старшего, уважай младшего, уважай Учителя, уважай своего
-                    ученика». Без взаимного уважения невозможна передача традиционных знаний.
+                    Встать на Путь традиционного каратэ стоит в любом возрасте. Выявлять возможности своего тела и духа — бесценно!
                   </li>
                   <li class="philosophy__tabs-contents__item js-philosophy__tabs-contents__item" data-tab="4">
-                    Известная3 каллиграфия гласит: «Уважай старшего, уважай младшего, уважай Учителя, уважай своего
-                    ученика». Без взаимного уважения невозможна передача традиционных знаний.
+                    Очищайте и воспитывайте свой дух и волю через постоянные тренировки. Со временем тело станет крепким, как доспехи воина, а ум острым, как копьё.
                   </li>
                   <li class="philosophy__tabs-contents__item js-philosophy__tabs-contents__item" data-tab="5">
-                    Известная4 каллиграфия гласит: «Уважай старшего, уважай младшего, уважай Учителя, уважай своего
-                    ученика». Без взаимного уважения невозможна передача традиционных знаний.
+                    Всеми силами стремись к совершенству, принимая его непостижимость!
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="philosophy__img">
-              <img src="./philosophy/philosophy-desktop.jpg" alt="">
+            <div class="js-philosophy__img philosophy__img active" data-tab="1">
+              <picture>
+                <source
+                        srcset="./philosophy/philosophy-images-slide-1_1x.webp 1x,
+                                            ./philosophy/philosophy-images-slide-1_2x.webp 2x" type="image/webp">
+                <source srcset="./philosophy/philosophy-images-slide-1_1x.jpg 1x,
+                                            ./philosophy/philosophy-images-slide-1_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./philosophy/philosophy-images-slide-1_1x.jpg" alt="Окинава. Додзе Грандмастера Икемияги Массааки." />
+              </picture>
+            </div>
+            <div class="js-philosophy__img philosophy__img" data-tab="2">
+              <picture>
+                <source
+                        srcset="./philosophy/philosophy-images-slide-2_1x.webp 1x,
+                                            ./philosophy/philosophy-images-slide-2_2x.webp 2x" type="image/webp">
+                <source srcset="./philosophy/philosophy-images-slide-2_1x.jpg 1x,
+                                            ./philosophy/philosophy-images-slide-2_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./philosophy/philosophy-images-slide-2_1x.jpg" alt="Окинава. Икемияги Масааки сан и Дмитрий Рыбаков." />
+              </picture>
+            </div>
+            <div class="js-philosophy__img philosophy__img" data-tab="3">
+              <picture>
+                <source
+                        srcset="./philosophy/philosophy-images-slide-3_1x.webp 1x,
+                                            ./philosophy/philosophy-images-slide-3_2x.webp 2x" type="image/webp">
+                <source srcset="./philosophy/philosophy-images-slide-3_1x.jpg 1x,
+                                            ./philosophy/philosophy-images-slide-3_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./philosophy/philosophy-images-slide-3_1x.jpg" alt="Окинава. Додзе Грандмастера Икемияги Массааки. Ученики." />
+              </picture>
+            </div>
+            <div class="js-philosophy__img philosophy__img" data-tab="4">
+              <picture>
+                <source
+                        srcset="./philosophy/philosophy-images-slide-4_1x.webp 1x,
+                                            ./philosophy/philosophy-images-slide-4_2x.webp 2x" type="image/webp">
+                <source srcset="./philosophy/philosophy-images-slide-4_1x.jpg 1x,
+                                            ./philosophy/philosophy-images-slide-4_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./philosophy/philosophy-images-slide-4_1x.jpg" alt="Дмитрий Рыбаков. Сейшельские острова." />
+              </picture>
+            </div>
+            <div class="js-philosophy__img philosophy__img" data-tab="5">
+              <picture>
+                <source
+                        srcset="./philosophy/philosophy-images-slide-5_1x.webp 1x,
+                                            ./philosophy/philosophy-images-slide-5_2x.webp 2x" type="image/webp">
+                <source srcset="./philosophy/philosophy-images-slide-5_1x.jpg 1x,
+                                            ./philosophy/philosophy-images-slide-5_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./philosophy/philosophy-images-slide-5_1x.jpg" alt="Окинава. Замок Кацурэн." />
+              </picture>
             </div>
           </div>
         </div>
       </div>
       <div id="traditions">
         <div class="traditions-img">
-          <img src="./traditions/traditions.jpg" alt="">
+          <img
+                  loading="lazy"
+                  src="./traditions/traditions.jpg" alt="">
         </div>
         <div class="traditions-scheme__wrap">
           <div class="traditions-scheme">
             <div class="traditions-scheme__content">
               <h2 class="title title--h1 traditions-scheme__title">
-                Прямая линия наследия традиций
-                от основоположника стиля
+                Прямая линия наследия Gōjū-ryū (剛柔流) от Основоположника стиля:
               </h2>
-              <div class="traditions-scheme__link">
-                <a href="#" class="text--s">
-                  полная схема наследия
-                </a>
-              </div>
               <div class="traditions-list__wrap">
                 <ul class="traditions-list">
                   <li>
                     <div class="traditions-list-item__img">
-                      <img src="./traditions/traditions-scheme-1.jpg" alt="">
+                      <picture>
+                        <source
+                                srcset="./traditions/traditions-scheme-1_1x.webp 1x,
+                                            ./traditions/traditions-scheme-1_2x.webp 2x" type="image/webp">
+                        <source srcset="./traditions/traditions-scheme-1_1x.jpg 1x,
+                                            ./traditions/traditions-scheme-1_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./traditions/traditions-scheme-1_1x.jpg" alt="Канрё Хигаонна" />
+                      </picture>
                     </div>
                     <div class="traditions-list-item__description text--s">
-                      Канрё Хигаонна,
-                      Higashionna Kanryō,
-                      東恩納 寛量
+                      Канрё Хигаонна, <br />
+                      Higashionna Kanryō, <br />
+                      東恩納 寛量 <br />
                       (1853–1915)
                     </div>
                   </li>
                   <li>
                     <div class="traditions-list-item__img">
-                      <img src="./traditions/traditions-scheme-2.jpg" alt="">
+                      <picture>
+                        <source
+                                srcset="./traditions/traditions-scheme-2_1x.webp 1x,
+                                            ./traditions/traditions-scheme-2_2x.webp 2x" type="image/webp">
+                        <source srcset="./traditions/traditions-scheme-2_1x.jpg 1x,
+                                            ./traditions/traditions-scheme-2_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./traditions/traditions-scheme-2_1x.jpg" alt="Тёдзюн Мияги" />
+                      </picture>
                     </div>
                     <div class="traditions-list-item__description text--s">
-                      Тёдзюн Мияги,
-                      Chōjun Miyagi,
-                      宮城 長順
+                      Тёдзюн Мияги, <br />
+                      Chōjun Miyagi, <br />
+                      宮城 長順 <br />
                       (1888–1953)
                     </div>
                   </li>
                   <li>
                     <div class="traditions-list-item__img">
-                      <img src="./traditions/traditions-scheme-3.jpg" alt="">
+                      <picture>
+                        <source
+                                srcset="./traditions/traditions-scheme-3_1x.webp 1x,
+                                            ./traditions/traditions-scheme-3_2x.webp 2x" type="image/webp">
+                        <source srcset="./traditions/traditions-scheme-3_1x.jpg 1x,
+                                            ./traditions/traditions-scheme-3_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./traditions/traditions-scheme-3_1x.jpg" alt="Мэйтоку Яги" />
+                      </picture>
                     </div>
                     <div class="traditions-list-item__description text--s">
-                      Мэйтоку Яги,
-                      Meitoku Yagi
-                      八木 明徳
+                      Мэйтоку Яги, <br />
+                      Meitoku Yagi <br />
+                      八木 明徳 <br />
                       (1912–2003)
                     </div>
                   </li>
                   <li>
                     <div class="traditions-list-item__img">
-                      <img src="./traditions/traditions-scheme-4.jpg" alt="">
+                      <picture>
+                        <source
+                                srcset="./traditions/traditions-scheme-4_1x.webp 1x,
+                                            ./traditions/traditions-scheme-4_2x.webp 2x" type="image/webp">
+                        <source srcset="./traditions/traditions-scheme-4_1x.jpg 1x,
+                                            ./traditions/traditions-scheme-4_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./traditions/traditions-scheme-4_1x.jpg" alt="Грандмастер Масааки Икемияги" />
+                      </picture>
                     </div>
                     <div class="traditions-list-item__description text--s">
-                      Масааки Икемияги,
-                      Masaaki Ikemiyagi
-                      池宮 城政明
+                      Масааки Икемияги, <br />
+                      Masaaki Ikemiyagi <br />
+                      池宮 城政明 <br />
                       (род. 1953)
+                      <br>
+                      <br>
+                      Узнать больше
+                      <br>
+                      на <a href="https://ikemiyagi.com/ru/" target="_blank">ikemiyagi.com</a>
                     </div>
                   </li>
                   <li>
                     <div class="traditions-list-item__img">
-                      <img src="./traditions/traditions-scheme-5.jpg" alt="">
+                      <picture>
+                        <source
+                                srcset="./traditions/traditions-scheme-5_1x.webp 1x,
+                                            ./traditions/traditions-scheme-5_2x.webp 2x" type="image/webp">
+                        <source srcset="./traditions/traditions-scheme-5_1x.jpg 1x,
+                                            ./traditions/traditions-scheme-5_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./traditions/traditions-scheme-5_1x.jpg" alt="Дмитрий Рыбаков" />
+                      </picture>
                     </div>
                     <div class="traditions-list-item__description text--s">
-                      Рыбаков Дмитрий Михайлович, Dmitry Rybakov
-                      ドミトリー・リバコフ
+                      Дмитрий Рыбаков, <br />
+                      Dmitry Rybakov<br />
+                      ドミトリー・リバコフ <br />
                       (род. 1986)
                     </div>
                   </li>
@@ -283,18 +407,6 @@
                     </div>
                   </li>
                 </ul>
-                <ul class="traditions-list">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li>
-                    <div class="traditions-list-item__footer">
-                      Узнать больше
-                      на <a href="https://ikemiyagi.com/ru/" target="_blank">ikemiyagi.com</a>
-                    </div>
-                  </li>
-                  <li></li>
-                </ul>
               </div>
             </div>
             <div class="traditions-scheme__footer"></div>
@@ -306,17 +418,18 @@
           <div id="agency">
             <div>
               <div class="subtitle">
-                Московское ДодзЁ
+                представительство в москве
               </div>
               <div class="agency__text">
                 <h3 class="agency__title title--h1">
-                  Представительством Окинавской Школы
-                  Ikemiyagi Dojo в России руководит Дмитрий Рыбаков
+                  Представительство Окинавской Школы Ikemiyagi Dojo в России основал и руководит Дмитрий Рыбаков
                 </h3>
                 <div class="agency__description">
-                  4 Дан Годзю-рю,<br>
-                  ближайший ученик <br>
-                  Масааки Икемияги Сенсея
+                  Шибучо, 4 Дан Годзю-рю <br />
+                  ученик Масааки Икемияги <br />
+                  30 лет на пути боевых единоборств <br />
+                  50+ полноконтактных поединков <br />
+                  бронзовая медаль ЧМ на Окинаве <br />
                 </div>
               </div>
               <div class="js-agency-slider agency-slider">
@@ -327,11 +440,18 @@
                       <div></div>
                       <div class="agency-slide__img">
                         <div class="agency-slide__img-wrap">
-                          <img
-                                  src="./agency-images/agency-slide-1.jpg"
-                                  alt=""
+                          <picture
                                   class="js-quote-preview-img"
-                          />
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-1_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-1_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-1_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-1_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-1_1x.jpg" alt="Дмитрий Рыбаков. 4 Дан Годзю-рю. Шибучо, ответственный за развитие Ikemiyagi Dojo в Грузии, Израиле и ОАЭ." />
+                          </picture>
                           <button
                                   class="quote-preview js-quote-preview"
                                   type="button"
@@ -340,9 +460,16 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div class="avatar">
-                              <img
-                                      class="js-quote-author-img"
-                                      src="./agency-images/quote-author-1.jpg" alt="" />
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-1_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-1_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-1_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-1_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-1_1x.jpg" alt="" />
+                              </picture>
                             </div>
                           </button>
                           <div class="quote">
@@ -350,21 +477,26 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div
-                                    class="quote__text text--l js-quote-text">
-                              Печать Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги
-                              Сэнсея — очень важный артефакт принадлежности к школе и высокий знак личного доверия
-                              от Грандмастера.
+                                    class="quote__text js-quote-text">
+                              Я занимаюсь единоборствами больше тридцати лет. Ну, как занимаюсь… С большими перерывами, различными видами без особых предпочтений. И только в Школе Годзю-рю Икемияги Додзё у Сенсея Дмитрия Рыбакова я нашёл, наконец, то, что искал. И свой стиль, и своего мастера. Я впервые нахожу удовольствие в самом процессе занятий, не стремясь к какой-то сверхцели — как будто плыву в потоке, радуясь самому движению. Но при этом впервые, только в нашем Додзё, появились азарт и интерес разобраться в деталях, понять суть стиля и школы, желание принимать участие в гашуку, проходить аттестации.
                             </div>
                             <div class="quote__author">
                               <div class="avatar">
-                                <img
-                                  class="js-quote-author-img"
-                                  src="./agency-images/quote-author-1.jpg" alt="" />
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-1_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-1_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-1_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-1_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-1_1x.jpg" alt="" />
+                                </picture>
                               </div>
                               <div class="quote__author-description js-quote-description">
-                                Антон Мелкумов,
-                                руководитель холдинга «Кит»,
-                                2-й Дан Окинава Годзю-рю
+                                Владимир Кожокарь <br />
+                                генеральный директор Группы компаний Старвей
+                                2-й кю Годзю-рю
                               </div>
                             </div>
                           </div>
@@ -377,11 +509,18 @@
                       <div></div>
                       <div class="agency-slide__img">
                         <div class="agency-slide__img-wrap">
-                          <img
-                                  src="./agency-images/agency-slide-1.jpg"
-                                  alt=""
+                          <picture
                                   class="js-quote-preview-img"
-                          />
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-2_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-2_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-2_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-2_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-2_1x.jpg" alt="Лицензия Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги Сэнсея." />
+                          </picture>
                           <button
                                   class="quote-preview js-quote-preview"
                                   type="button"
@@ -390,9 +529,16 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div class="avatar">
-                              <img
-                                class="js-quote-author-img"
-                                src="./agency-images/quote-author-1.jpg" alt="" />
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-2_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-2_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-2_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-2_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-2_1x.jpg" alt="" />
+                              </picture>
                             </div>
                           </button>
                           <div class="quote">
@@ -400,21 +546,27 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div
-                                    class="quote__text text--l js-quote-text">
-                              2Печать Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги
-                              Сэнсея — очень важный артефакт принадлежности к школе и высокий знак личного доверия
-                              от Грандмастера.
+                                    class="quote__text js-quote-text">
+                              Лицензия руководителя Школы Годзю-рю «Ikemiyagi Dojo» в России выдана сенсею Дмитрию Рыбакову Президентом Всеокинавской Федерации Каратэ-до.
+                              Стать представителем одной из самых уважаемых Школ традиционного Окинавского каратэ в мире — это знак признания мастерства, приверженности к настоящему боевому искусству и традициям семьи сенсея Масааки Икемияги.
                             </div>
                             <div class="quote__author">
                               <div class="avatar">
-                                <img
-                                  class="js-quote-author-img"
-                                  src="./agency-images/quote-author-1.jpg" alt="" />
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-2_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-2_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-2_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-2_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-2_1x.jpg" alt="" />
+                                </picture>
                               </div>
                               <div class="quote__author-description js-quote-description">
-                                Антон Мелкумов,
-                                руководитель холдинга «Кит»,
-                                2-й Дан Окинава Годзю-рю
+                                Артём Кузнецов <br />
+                                исполнительный директор Группы компаний Акцентр
+                                1-й дан Годзю-рю
                               </div>
                             </div>
                           </div>
@@ -427,11 +579,18 @@
                       <div></div>
                       <div class="agency-slide__img">
                         <div class="agency-slide__img-wrap">
-                          <img
-                                  src="./agency-images/agency-slide-1.jpg"
-                                  alt=""
+                          <picture
                                   class="js-quote-preview-img"
-                          />
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-3_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-3_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-3_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-3_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-3_1x.jpg" alt="Печать Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги Сэнсея." />
+                          </picture>
                           <button
                                   class="quote-preview js-quote-preview"
                                   type="button"
@@ -440,9 +599,16 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div class="avatar">
-                              <img
-                                class="js-quote-author-img"
-                                src="./agency-images/quote-author-1.jpg" alt="" />
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-3x.webp 1x,
+                                            ./agency-images/quote-images-slide-3_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-3x.jpg 1x,
+                                            ./agency-images/quote-images-slide-3_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-3_1x.jpg" alt="" />
+                              </picture>
                             </div>
                           </button>
                           <div class="quote">
@@ -450,21 +616,26 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div
-                                    class="quote__text text--l js-quote-text">
-                              3Печать Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги
-                              Сэнсея — очень важный артефакт принадлежности к школе и высокий знак личного доверия
-                              от Грандмастера.
-                            </div>
+                                    class="quote__text js-quote-text">
+                              Японскую печать «Шибучо» мастер Масааки Икемияги изготовил и вручил моему учителю Дмитрию, как символ доверия и ответственности. Этот предмет по Окинавским традициям подтверждает, что ученик воплощает качества, отражающие смыслы воинского искусства Годзю-рю и является единственным официальным представителем Школы Икемияги Додзё в России.                            </div>
                             <div class="quote__author">
                               <div class="avatar">
-                                <img
-                                  class="js-quote-author-img"
-                                  src="./agency-images/quote-author-1.jpg" alt="" />
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-3x.webp 1x,
+                                            ./agency-images/quote-images-slide-3_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-3_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-3_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          class="js-quote-author-img"
+                                          loading="lazy"
+                                          src="./agency-images/quote-images-slide-3_1x.jpg" alt="" />
+                                </picture>
                               </div>
                               <div class="quote__author-description js-quote-description">
-                                Антон Мелкумов,
-                                руководитель холдинга «Кит»,
-                                2-й Дан Окинава Годзю-рю
+                                Анна Рыбакова <br />
+                                клинический психолог, сексолог
+                                2-й дан Годзю-рю
                               </div>
                             </div>
                           </div>
@@ -477,11 +648,18 @@
                       <div></div>
                       <div class="agency-slide__img">
                         <div class="agency-slide__img-wrap">
-                          <img
-                                  src="./agency-images/agency-slide-1.jpg"
-                                  alt=""
+                          <picture
                                   class="js-quote-preview-img"
-                          />
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-4_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-4_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-4_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-4_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-4_1x.jpg" alt="Масааки Икемияги Сэнсэй вручает свой пояс Дмитрию Рыбакову." />
+                          </picture>
                           <button
                                   class="quote-preview js-quote-preview"
                                   type="button"
@@ -490,9 +668,16 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div class="avatar">
-                              <img
-                                class="js-quote-author-img"
-                                src="./agency-images/quote-author-1.jpg" alt="" />
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-4_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-4_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-4_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-4_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-4_1x.jpg" alt="" />
+                              </picture>
                             </div>
                           </button>
                           <div class="quote">
@@ -500,21 +685,27 @@
                               <img src="./icons/quote.svg" alt="" />
                             </div>
                             <div
-                                    class="quote__text text--l js-quote-text">
-                              4Печать Шибучо — руководителя представительства Школы окинавского каратэ Масааки Икемияги
-                              Сэнсея — очень важный артефакт принадлежности к школе и высокий знак личного доверия
-                              от Грандмастера.
+                                    class="quote__text js-quote-text">
+                              Летом 2019-го года Канчо Масааки Икемияги передал сенсею Дмитрию Рыбакову свой пояс. В известном фильме “Чёрный пояс” режиссёра Сюничи Нагасаки ближайшие ученики сражались за пояс Учителя после его смерти. Получить символ наследника Школы при жизни Грандмастера может только человек, для которого каратэ — это не смысл жизни, каратэ — это и есть жизнь!
                             </div>
                             <div class="quote__author">
                               <div class="avatar">
-                                <img
-                                    class="js-quote-author-img"
-                                    src="./agency-images/quote-author-1.jpg" alt="" />
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-4_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-4_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-4_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-4_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-4_1x.jpg" alt="" />
+                                </picture>
                               </div>
                               <div class="quote__author-description js-quote-description">
-                                Антон Мелкумов,
-                                руководитель холдинга «Кит»,
-                                2-й Дан Окинава Годзю-рю
+                                Антон Кузнецов <br />
+                                директор по развитию Группы компаний Акцентр
+                                2-й дан Годзю-рю
                               </div>
                             </div>
                           </div>
@@ -522,9 +713,379 @@
                       </div>
                     </div>
                   </li>
+                  <li class="glide__slide">
+                    <div class="agency-slide js-agency-slide">
+                      <div></div>
+                      <div class="agency-slide__img">
+                        <div class="agency-slide__img-wrap">
+                          <picture
+                                  class="js-quote-preview-img"
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-5_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-5_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-5_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-5_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-5_1x.jpg" alt="Тренировочный процесс в московском додзе Икемияги Додзё." />
+                          </picture>
+                          <button
+                                  class="quote-preview js-quote-preview"
+                                  type="button"
+                          >
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div class="avatar">
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-5_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-5_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-5_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-5_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        loading="lazy"
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-5_1x.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </button>
+                          <div class="quote">
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div
+                                    class="quote__text js-quote-text">
+                              За свою карьеру каратиста Дмитрий провел несколько десятков в прямом смысле полноконтактных боев. Очевидно, что этот опыт позволяет ему выявлять и передавать ученикам первичный исторический смысл различных традиционных техник окинавского каратэ.
+                            </div>
+                            <div class="quote__author">
+                              <div class="avatar">
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-5_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-5_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-5_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-5_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-5_1x.jpg" alt="" />
+                                </picture>
+                              </div>
+                              <div class="quote__author-description js-quote-description">
+                                Сергей Котляренко <br />
+                                Основатель и генеральный директор КСП Капитал
+                                1-й дан Годзю-рю
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="agency-slide js-agency-slide">
+                      <div></div>
+                      <div class="agency-slide__img">
+                        <div class="agency-slide__img-wrap">
+                          <picture
+                                  class="js-quote-preview-img"
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-6_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-6_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-6_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-6_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-6_1x.jpg" alt="Дмитрий Рыбаков на пьедестале Чемпионата мира. Окинава, 2022." />
+                          </picture>
+                          <button
+                                  class="quote-preview js-quote-preview"
+                                  type="button"
+                          >
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div class="avatar">
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-6_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-6_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-6_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-6_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-6_1x.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </button>
+                          <div class="quote">
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div
+                                    class="quote__text js-quote-text">
+                              Прошлым летом Дмитрий сенсей взял медаль Чемпионата Мира на Окинаве. В наше непростое, санкционное время оказаться на подиуме на родине каратэ, получить высокую оценку мастерства от корифеев — огромное достижение, несомненно, демонстрация духа!                            </div>
+                            <div class="quote__author">
+                              <div class="avatar">
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-6_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-6_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-6_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-6_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-6_1x.jpg" alt="" />
+                                </picture>
+                              </div>
+                              <div class="quote__author-description js-quote-description">
+                                Артём Глотов <br />
+                                генеральный директор Мобильные ГТЭС
+                                1-й дан Годзю-рю
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="agency-slide js-agency-slide">
+                      <div></div>
+                      <div class="agency-slide__img">
+                        <div class="agency-slide__img-wrap">
+                          <picture
+                                  class="js-quote-preview-img"
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-7_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-7_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-7_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-7_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-7_1x.jpg" alt="Окинавская газета RyuKyu Shimpo." />
+                          </picture>
+                          <button
+                                  class="quote-preview js-quote-preview"
+                                  type="button"
+                          >
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div class="avatar">
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-7_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-7_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-7_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-7_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        loading="lazy"
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-7_1x.jpg" alt="" />
+                              </picture>
+                            </div>
+                          </button>
+                          <div class="quote">
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div
+                                    class="quote__text js-quote-text">
+                              На Окинаве хорошо понимают и разбираются в каратэ, поэтому персонально попасть на первую страницу газеты, означает признание соответствия мастера принципам и духу окинавского каратэ, приверженность избранному пути и традициям, высокую техническую подготовку и натренированность.
+                            </div>
+                            <div class="quote__author">
+                              <div class="avatar">
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-7_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-7_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-7_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-7_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-7_1x.jpg" alt="" />
+                                </picture>
+                              </div>
+                              <div class="quote__author-description js-quote-description">
+                                Александр Ратников <br />
+                                адвокат
+                                2-й дан Годзю-рю
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="agency-slide js-agency-slide">
+                      <div></div>
+                      <div class="agency-slide__img">
+                        <div class="agency-slide__img-wrap">
+                          <picture
+                                  class="js-quote-preview-img"
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-8_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-8_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-8_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-8_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-8_1x.jpg" alt="Кайчо Такаши Кинджо (основатель Кобурю, Президент Окинава Кобурю Каратэ-до Кобудо Кобукай), Дмитрий Рыбаков (ученик Грандмастеров Масааки Икемияги, Такаши и Масами Кинджо), Шихан Масами Кинджо (Грандмастер Кобурю, супруга Кайчо Такаши Кинджо), Канчо Масааки Икемияги (Грандмастер Годзю-рю, Президент Всеокинавской Федерации Каратэ-до)." />
+                          </picture>
+                          <button
+                                  class="quote-preview js-quote-preview"
+                                  type="button"
+                          >
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div class="avatar">
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-8_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-8_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-8_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-8_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-8_1x.jpg" alt="Кайчо Такаши Кинджо (основатель Кобурю, Президент Окинава Кобурю Каратэ-до Кобудо Кобукай), Дмитрий Рыбаков (ученик Грандмастеров Масааки Икемияги, Такаши и Масами Кинджо), Шихан Масами Кинджо (Грандмастер Кобурю, супруга Кайчо Такаши Кинджо), Канчо Масааки Икемияги (Грандмастер Годзю-рю, Президент Всеокинавской Федерации Каратэ-до)." />
+                              </picture>
+                            </div>
+                          </button>
+                          <div class="quote">
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div
+                                    class="quote__text js-quote-text">
+                              Самое ценное — это получить знание из первоисточника! Сделать это непросто, учитывая традиционную закрытость японцев и отсутствие информации в интернете. Семья мастеров Кинджо (Такаши Кинджо 1939 года рождения!) тренируется и тренирует в своем небольшом традиционном домашнем додзе, попасть в который «с улицы» невозможно. Необходимы рекомендации уважаемых ими людей и их личное желание, а также возможность провести минимум несколько месяцев на Окинаве плюс тяжелые ежедневные тренировки, чтобы стать аттестованным учеником по Кобудо.                            </div>
+                            <div class="quote__author">
+                              <div class="avatar">
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-8_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-8_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-8_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-8_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-8_1x.jpg" alt="Кайчо Такаши Кинджо (основатель Кобурю, Президент Окинава Кобурю Каратэ-до Кобудо Кобукай), Дмитрий Рыбаков (ученик Грандмастеров Масааки Икемияги, Такаши и Масами Кинджо), Шихан Масами Кинджо (Грандмастер Кобурю, супруга Кайчо Такаши Кинджо), Канчо Масааки Икемияги (Грандмастер Годзю-рю, Президент Всеокинавской Федерации Каратэ-до)." />
+                                </picture>
+                              </div>
+                              <div class="quote__author-description js-quote-description">
+                                Антон Мелкумов <br />
+                                предприниматель в сфере строительства и гостеприимства
+                                2-й дан Годзю-рю
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="glide__slide">
+                    <div class="agency-slide js-agency-slide">
+                      <div></div>
+                      <div class="agency-slide__img">
+                        <div class="agency-slide__img-wrap">
+                          <picture
+                                  class="js-quote-preview-img"
+                          >
+                            <source
+                                    srcset="./agency-images/agency-images-slide-9_1x.webp 1x,
+                                            ./agency-images/agency-images-slide-9_2x.webp 2x" type="image/webp">
+                            <source srcset="./agency-images/agency-images-slide-9_1x.jpg 1x,
+                                            ./agency-images/agency-images-slide-9_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    loading="lazy"
+                                    src="./agency-images/agency-images-slide-9_1x.jpg" alt="Домашний Додзё Дмитрия Рыбакова." />
+                          </picture>
+                          <button
+                                  class="quote-preview js-quote-preview"
+                                  type="button"
+                          >
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div class="avatar">
+                              <picture>
+                                <source
+                                        srcset="./agency-images/quote-images-slide-9_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-9_2x.webp 2x" type="image/webp">
+                                <source srcset="./agency-images/quote-images-slide-9_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-9_2x.jpg 2x" type="image/jpeg">
+                                <img
+                                        loading="lazy"
+                                        class="js-quote-author-img"
+                                        src="./agency-images/quote-images-slide-9_1x.jpg" alt="Домашний Додзё Дмитрия Рыбакова." />
+                              </picture>
+                            </div>
+                          </button>
+                          <div class="quote">
+                            <div class="quote__mark">
+                              <img src="./icons/quote.svg" alt="" />
+                            </div>
+                            <div
+                                    class="quote__text js-quote-text">
+                              По традициям окинавских мастеров сенсей поднял и обустроил свой домашний Додзё. Лично мне более не известен ни один из идейных последователей бусидо (хотя свой стаж занятий единоборствами я исчисляю уже десятками лет), который создал бы “место Пути” своими руками. Подчеркну – не домашний спортзал с тренажерами, а канонический окинавский додзё, с удивительной энергетикой и артефактами. Среди которых пояс Масааки Икемияги, макивара, сломанная рукой Грандмастера, каллиграфия Мэйтоку Яги, медаль из рюкюйского стекла, традиционные японские печати Дмитрия и другие реликвии. Это говорит о многом и в особенности о том, какую роль каратэ играет в жизни учителя. Как домашний додзё стал частью дома его семьи, так же неразрывно каратэ вплетено в его жизнь.                             </div>
+                            <div class="quote__author">
+                              <div class="avatar">
+                                <picture>
+                                  <source
+                                          srcset="./agency-images/quote-images-slide-9_1x.webp 1x,
+                                            ./agency-images/quote-images-slide-9_2x.webp 2x" type="image/webp">
+                                  <source srcset="./agency-images/quote-images-slide-9_1x.jpg 1x,
+                                            ./agency-images/quote-images-slide-9_2x.jpg 2x" type="image/jpeg">
+                                  <img
+                                          loading="lazy"
+                                          class="js-quote-author-img"
+                                          src="./agency-images/quote-images-slide-9_1x.jpg" alt="Домашний Додзё Дмитрия Рыбакова." />
+                                </picture>
+                              </div>
+                              <div class="quote__author-description js-quote-description">
+                                Андрей Загоруйко <br />
+                                начальник управления по работе с проблемными контрагентами и мониторингу Юникредит лизинг
+                                2 дан Годзю-рю
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
                 </ul>
+                  <div class="quote js-quote quote-template">
+                    <button class="header-close-button js-quote-close-avatar">
+                      <img src="./icons/x.svg" alt="">
+                    </button>
+                    <div class="quote__mark">
+                      <img src="./icons/quote.svg" alt="" />
+                    </div>
+                    <div class="quote__text js-quote-text">
+                    </div>
+                    <div class="quote__author">
+                      <div class="avatar">
+                        <img src="" alt="" class="js-quote-avatar"/>
+                      </div>
+                      <div class="quote__author-description js-quote-description">
+                      </div>
+                    </div>
+                  </div>
                 <div class="agency-slide">
-                  <div></div>
+                   <div></div>
                   <div class="slider-controls">
                     <div class="glide__arrows slider-arrows" data-glide-el="controls">
                       <button class="glide__arrow slider-arr glide__arrow--left" data-glide-dir="<">
@@ -545,25 +1106,6 @@
                     </div>
                   </div>
                 </div>
-                  <div class="quote js-quote quote-template">
-                    <div class="quote__mark">
-                      <img src="./icons/quote.svg" alt="" />
-                    </div>
-                    <div class="quote__text text--l js-quote-text">
-                    </div>
-                    <div class="quote__author">
-                      <div class="avatar">
-                        <img src="" alt="" class="js-quote-avatar"/>
-                      </div>
-                      <div class="quote__author-description js-quote-description">
-                      </div>
-                    </div>
-                    <button class="quote-close" type="button">
-                      <div class="avatar">
-                        <img src="" alt=""  class="js-quote-close-avatar"/>
-                      </div>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -573,23 +1115,25 @@
               Московское ДодзЁ
             </div>
             <h2 class="title title--h1 conditions-title">
-              Условия для тренировок
+              Место тренировок
             </h2>
             <div class="conditions-description">
-              <p>
-                Оборудованное всем необходимым для непрерывного совершенствования тела и духа додзе в центре Москвы.
-                Три зала для тренировок, хорошая душевая, просторная раздевалка, миникафе с китайскими чаями и своя отдельная парковка. Традиционные окинавские снаряды и макивары,
-                многие из которых изготовлены вручную по чертежам и советам от Грандмастера.
+              <p class="mobile-hidden">
+                Занятия проходят в четырёх просторных и светлых залах:
+                Основной Додзё площадью 150 квадратных метров с 6-ти метровыми потолками, традиционным деревянным полом и панорамными окнами, оборудован подвесными мешками и 15-ю установленными по периметру зала дубовыми макивара.
+              </p>
+              <p class="mobile-hidden">
+                VIP додзё для мини групп и персональных тренировок, наполненный японскими гравюрами, каллиграфиями руки Грандмастера Масааки Икемияги, традиционными Окинавскими снарядами Ходжоундо и орудиями Кобудо.
+              </p>
+              <p class="mobile-hidden">
+                Средний и малый залы с мягким татами и инвентарём для детских тренировок.
+                Зона ожидания, просторные раздевалки с новыми душевыми и сауной.
               </p>
               <p>
-                Все наши инструкторы прошли аттестацию на родине каратэ, острове Окинава в Главном Годзю-рю Додзе Масааки Икемияги Сенсея.
-              </p>
-              <p>
-                У нас организованы несколько постоянных взрослых и детских групп (от 4 лет). Присоединиться к тренировочному процессу можно в любое время года. Наши инструкторы и ученики групп будут рады новому заинтересованному в совершенствовании на пути карате ученику и окажут всевозможную поддержку по органичному вливанию в группу.
-              </p>
+                У нас организованы несколько постоянных взрослых и детских групп (от 3 лет). Присоединиться к тренировочному процессу можно в любое время года. Инструкторы и ученики Икемияги Додзё будут рады новому заинтересованному в совершенствовании на Пути каратэ и окажут всевозможную поддержку по органичному вливанию в группу.               </p>
               <p>
                 Возможны индивидуальные занятия, составленные с учетом вашего расписания.
-              </p>
+                Все инструкторы Школы аттестованы на родине каратэ, острове Окинава (Япония) в Главном Годзю-рю Додзе Грандмастера Масааки Икемияги (Ханши 9-й дан).              </p>
             </div>
           </div>
           <div class="conditions-main-wrap">
@@ -598,23 +1142,98 @@
                 <ul class="glide__slides js-conditions-slides">
                   <li class="glide__slide">
                     <div class="conditions-slide__image">
-                      <img
-                        class="js-conditions-slide__image"
-                        src="./conditions-images/conditions-img-1.jpg" alt="" />
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-1_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-1_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-1_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-1_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-1_1x.jpg" alt="Основной зал московского Додзё." />
+                      </picture>
                     </div>
                   </li>
                   <li class="glide__slide">
                     <div class="conditions-slide__image">
-                      <img
-                          class="js-conditions-slide__image"
-                          src="./conditions-images/conditions-img-1.jpg" alt="" />
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-2_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-2_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-2_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-2_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-2_1x.jpg" alt="Традиционные снаряды Окинавского каратэ." />
+                      </picture>
                     </div>
                   </li>
                   <li class="glide__slide">
                     <div class="conditions-slide__image">
-                      <img
-                          class="js-conditions-slide__image"
-                          src="./conditions-images/conditions-img-1.jpg" alt="" />
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-3_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-3_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-3_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-3_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-3_1x.jpg" alt="Второй зал московского Додзё." />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="conditions-slide__image">
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-4_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-4_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-4_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-4_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-4_1x.jpg" alt="Комната ожидания и кафе московского Додзё." />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="conditions-slide__image">
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-5_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-5_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-5_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-5_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-5_1x.jpg" alt="Раздевалка московского Додзё." />
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="conditions-slide__image">
+                      <picture
+                              class="js-conditions-slide__image"
+                      >
+                        <source
+                                srcset="./conditions-images/conditions-images-slide-6_1x.webp 1x,
+                                            ./conditions-images/conditions-images-slide-6_2x.webp 2x" type="image/webp">
+                        <source srcset="./conditions-images/conditions-images-slide-6_1x.jpg 1x,
+                                            ./conditions-images/conditions-images-slide-6_2x.jpg 2x" type="image/jpeg">
+                        <img
+                                loading="lazy"
+                                src="./conditions-images/conditions-images-slide-6_1x.jpg" alt="Сауна московского Додзё." />
+                      </picture>
                     </div>
                   </li>
                 </ul>
@@ -639,22 +1258,52 @@
                 </div>
               </div>
             </div>
+            <div class="mobile-visible conditions-mobile-text">
+              <p>
+                Занятия проходят в четырёх просторных и светлых залах:
+                Основной Додзё площадью 150 квадратных метров с 6-ти метровыми потолками, традиционным деревянным полом и панорамными окнами, оборудован подвесными мешками и 15-ю установленными по периметру зала дубовыми макивара.
+              </p>
+              <p>
+                VIP додзё для мини групп и персональных тренировок, наполненный японскими гравюрами, каллиграфиями руки Грандмастера Масааки Икемияги, традиционными Окинавскими снарядами Ходжоундо и орудиями Кобудо.
+              </p>
+              <p>
+                Средний и малый залы с мягким татами и инвентарём для детских тренировок.
+                Зона ожидания, просторные раздевалки с новыми душевыми и сауной.
+              </p>
+            </div>
             <div class="conditions-main__content">
-              <img
-                  class="conditions-main__content-img"
-                  src="./conditions-images/conditions-content-1.jpg" alt="">
+              <picture
+                      class="mobile-hidden"
+              >
+                <source
+                        srcset="./conditions-images/kids-photo-mini_1x.webp 1x,
+                                            ./conditions-images/kids-photo-mini_2x.webp 2x" type="image/webp">
+                <source srcset="./conditions-images/kids-photo-mini_1x.jpg 1x,
+                                            ./conditions-images/kids-photo-mini_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./conditions-images/kids-photo-mini_1x.jpg" alt="Детская группа и Самойлова Александра Владимировна." />
+              </picture>
+              <picture
+                      class="mobile-visible"
+              >
+                <source
+                        srcset="./conditions-images/kids-photo-large_1x.webp 1x,
+                                            ./conditions-images/kids-photo-large_2x.webp 2x" type="image/webp">
+                <source srcset="./conditions-images/kids-photo-large_1x.jpg 1x,
+                                            ./conditions-images/kids-photo-large_2x.jpg 2x" type="image/jpeg">
+                <img
+                        loading="lazy"
+                        src="./conditions-images/kids-photo-large_1x.jpg" alt="Детская группа и Самойлова Александра Владимировна." />
+              </picture>
               <h3 class="title--h3 title conditions-main__content-title">
                 Детское направление
               </h3>
               <p class="hyphenate">
-                Оборудованное всем необходимым для непрерывного совершенствования тела и духа додзе в центре Москвы.
-                Взрослые и детские группы, индивидуальные занятия.
+                Тренировки для детей включают как можно больше подвижных игр, развивающих ловкость, выносливость, реакцию и скорость мышления. Не все ученики решают связать всю жизнь с боевыми искусствами, но занятия каратэ в раннем возрасте оказывают благотворное влияние на их развитие благодаря формированию особых качеств, позволяющих ребёнку справляться с трудностями и лучше понимать самого себя.
               </p>
-              <p class="hyphenate">
-                Все наши инструкторы прошли аттестацию на родине каратэ, острове Окинава в Главном Годзю-рю Додзе Масааки Икемияги Сенсея.
-              </p>
-              <p class="hyphenate">
-                Узнайте больше на <a href="https://dojo-kids.com/" target="_blank">dojo-kids.com</a>.
+              <p>
+                Узнайте больше на <a href="https://dojo-kids.com/" target="_blank">dojo-kids.com</a>
               </p>
             </div>
           </div>
@@ -663,13 +1312,10 @@
       <div class="page-block-attention" id="general">
         <div class="page-content-row-fixer">
           <div class="page-content-row">
-            <h3 class="subtitle">
-              будни додзё
-            </h3>
             <div class="no-limits-wrap">
               <div class="no-limits-text">
                 <h3 class="title title--h1 no-limits__title">
-                  Карате без границ
+                  каратэ без границ
                 </h3>
                 <p class="text--xl no-limits__text hyphenate">
                   Школа Масааки Икемияги объединяет учеников из 7 стран. Ежегодно представительство
@@ -677,8 +1323,7 @@
                 </p>
                 <ul class="no-limits__list hyphenate">
                   <li>
-                    Выездные тренировочные сборы во всех уголках планеты (Танзания, Дубай, Окинава, Сейшельские острова, различные регионы России).
-                  </li>
+                    Тренировочные сборы во всех уголках планеты. Состоявшиеся выезды: Танзания, Кения, ОАЭ (Дубай, Абу-Даби, Аджман), Япония (Окинава, Осака, Токио, Киото), Сейшельские и Мальдивские острова, Маврикий, Таиланд (Пхукет, Самуи, Панган), Индия, Шри-Ланка, Грузия, Португалия, Италия, различные регионы России.                  </li>
                   <li>
                     Международные семинары.
                   </li>
@@ -686,11 +1331,11 @@
                     Чемпионаты в Японии.
                   </li>
                   <li>
-                    Поездки на родину каратэ, остров Окинава с тренировками в Хонбу Додзё под руководством Масааки Икемияги Сенсея (Ханши, 9-й дан).
-                  </li>
+                    Поездки на родину каратэ, остров Окинава (Япония).
+                    Тренировки в Главном Годзю-рю Додзё под руководством Грандмастера Масааки Икемияги (Ханши, 9-й дан).                  </li>
                   <li>
-                    Аттестации на пояса с присвоением ученических и мастерских степеней Годзю-рю. Уникальная возможность получить чёрный пояс из рук Грандмастера Масааки Икемияги).
-                  </li>
+                    Аттестации на пояса с присвоением ученических степеней и мастерских уровней Годзю-рю.
+                    Чёрный пояс вручает лично Глава Школы, Канчо Масааки Икемияги.                  </li>
                 </ul>
               </div>
               <div class="no-limits-slider">
@@ -699,23 +1344,208 @@
                     <ul class="glide__slides js-no-limits-slides">
                       <li class="glide__slide">
                         <div class="no-limits-img">
-                          <img
-                              class="js-no-limits-img"
-                              src="./no-limits-images/no-limits-slide-1.jpg" alt="">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-1_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-1_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-1_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-1_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                 loading="lazy"
+                                 src="./no-limits-images/no-limits-slide-1_1x.jpg"
+                                 alt="Окинава. Замок Катсурэн, октябрь 2022."
+                            />
+                          </picture>
                         </div>
                       </li>
                       <li class="glide__slide">
                         <div class="no-limits-img">
-                          <img
-                              class="js-no-limits-img"
-                              src="./no-limits-images/no-limits-slide-1.jpg" alt="">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-2_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-2_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-2_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-2_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-2_1x.jpg"
+                                    alt="Ялта. Гашуку, май 2021."
+                                    loading="lazy"
+                            />
+                          </picture>
                         </div>
                       </li>
                       <li class="glide__slide">
                         <div class="no-limits-img">
-                          <img
-                              class="js-no-limits-img"
-                              src="./no-limits-images/no-limits-slide-1.jpg" alt="">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-3_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-3_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-3_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-3_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-3_1x.jpg"
+                                    loading="lazy"
+                                    alt="Окинава, Кокусай Дори. День Каратэ, октябрь 2023." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-4_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-4_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-4_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-4_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-4_1x.jpg"
+                                    loading="lazy"
+                                    alt="Танзания. Пик Килиманджаро, февраль 2021." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-5_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-5_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-5_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-5_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-5_1x.jpg"
+                                    loading="lazy"
+                                    alt="Грузия, Казбеги. Гашуку, аттестация, июнь 2018." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-6_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-6_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-6_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-6_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-6_1x.jpg"
+                                    loading="lazy"
+                                    alt="Москва. Семинар «Японские барабаны Тэйко»." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-7_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-7_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-7_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-7_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-7_1x.jpg"
+                                    loading="lazy"
+                                    alt="Окинава Каратэ Кайкан. День Каратэ, октябрь 2022." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-8_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-8_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-8_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-8_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-8_1x.jpg"
+                                    loading="lazy"
+                                    alt="Подмосковье. Гашуку, апрель 2021." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-9_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-9_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-9_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-9_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-9_1x.jpg"
+                                    loading="lazy"
+                                    alt="Подмосковье. Гашуку, январь 2021." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-10_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-10_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-10_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-10_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-10_1x.jpg"
+                                    loading="lazy"
+                                    alt="Таиланд, Пхукет." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-11_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-11_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-11_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-11_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-11_1x.jpg"
+                                    loading="lazy"
+                                    alt="Окинава. Пляж Тогучи, октябрь 2023." />
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="glide__slide">
+                        <div class="no-limits-img">
+                          <picture
+                                  class="js-no-limits-img"
+                          >
+                            <source
+                                    srcset="./no-limits-images/no-limits-slide-12_1x.webp 1x,
+                                            ./no-limits-images/no-limits-slide-12_2x.webp 2x" type="image/webp">
+                            <source srcset="./no-limits-images/no-limits-slide-12_1x.jpg 1x,
+                                            ./no-limits-images/no-limits-slide-12_2x.jpg 2x" type="image/jpeg">
+                            <img
+                                    src="./no-limits-images/no-limits-slide-12_1x.jpg"
+                                    loading="lazy"
+                                    alt="Тренировочный лагерь на Сейшельских островах, октябрь 2021." />
+                          </picture>
                         </div>
                       </li>
                     </ul>
@@ -755,9 +1585,7 @@
                 контактная информация
               </h2>
               <p class="text--s footer__description">
-                Российское представительство Школы окинавского традиционного карате расположено рядом с метро 1905 года.
-                В Школе работают четыре просторных и светлых зала. Есть большой арсенал традиционных японских орудий для
-                тренировки Годзю-рю. На территории работает бесплатная охраняемая парковка.
+                Московское представительство международной Школы Окинавского каратэ Годзю-рю «Икемияги Додзё» расположено рядом с деловым центром Москва-Сити в клубе World Martial Arts. На территории работает бесплатная охраняемая парковка.
               </p>
             </div>
           </div>
@@ -771,7 +1599,8 @@
                   <a href="https://yandex.ru/maps/-/CDaPE847" target="_blank">
                     123317 Москва,
                     <br />
-                    ул. Литвина-Седого, 3А
+                    ул. Литвина-Седого, 3А <br />
+                    м. Улица 1905 года <br />
                   </a>
                 </div>
               </li>
@@ -780,12 +1609,12 @@
                   пишите нам:
                 </div>
                 <div class="footer-contacts__text">
-                  <a href="mailto:wma@wmaclub.ru">wma@wmaclub.ru</a>
+                  <a href="mailto:info@ikemiyagi-dojo.ru">info@ikemiyagi-dojo.ru</a>
                 </div>
               </li>
             </ul>
             <div class="footer-phone">
-              <a href="tel:+79055580440">+7-905-558-04-40</a>
+              <a href="tel:+79856100010">+7 985 610 00 10</a>
             </div>
           </div>
         </div>

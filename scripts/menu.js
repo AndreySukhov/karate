@@ -2,11 +2,15 @@ const philosophyTabs =  document.querySelectorAll('.js-philosophy__tab-option')
 
 philosophyTabs.forEach((tab) => {
     tab.addEventListener('click',  (e) => {
+        document.querySelector('.js-philosophy__img.active').classList.remove('active');
         document.querySelector('.js-philosophy__tab-option.active').classList.remove('active');
         document.querySelector('.js-philosophy__tabs-contents__item.active').classList.remove('active');
         const listId = e.currentTarget.dataset.tab;
-        e.currentTarget.classList.add('active');
+        const target = e.currentTarget
+        target.classList.add('active');
         document.querySelector(`.js-philosophy__tabs-contents__item[data-tab="${listId}"]`)
+            .classList.add('active');
+        document.querySelector(`.js-philosophy__img[data-tab="${listId}"]`)
             .classList.add('active');
 
     })
@@ -21,7 +25,17 @@ menuToggleBtn.addEventListener('click', (e) => {
     menuContainer.classList.toggle('active');
 })
 
-menuCloseBtn.addEventListener('click', (e) => {
+const closeMenu = () => {
     menuToggleBtn.classList.remove('active');
     menuContainer.classList.remove('active');
+}
+menuCloseBtn.addEventListener('click', (e) => {
+    closeMenu()
+})
+
+document.querySelector('.js-header-nav-list').querySelectorAll('a')
+.forEach((link) => {
+    link.addEventListener('click', () => {
+        closeMenu();
+    })
 })

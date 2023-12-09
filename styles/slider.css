@@ -24,8 +24,27 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+@media (hover: hover) {
+    .slider-arr:hover {
+        border-color: rgba(0, 0, 0, 0.12) !important;
+    }
+}
+
+
+.slider-arr:active,
+.slider-arr:focus-visible {
+    background: rgba(0, 0, 0, 0.12)
+}
+
 .slider-arr:hover {
     opacity: 0.5;
+}
+
+@media (hover: none) {
+    .slider-arr:hover {
+        border-color: rgba(0, 0, 0, 0.12) !important;
+        opacity: 1;
+    }
 }
 
 .slider-arr.glide__arrow--left {

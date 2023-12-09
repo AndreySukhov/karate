@@ -34,16 +34,6 @@
     margin-bottom: 50px;
 }
 
-.traditions-scheme__link {
-    margin-bottom: 50px;
-}
-
-.traditions-scheme__link a {
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--orange);
-    color: var(--black);
-}
-
 .traditions-list {
     display: grid;
     grid-template-columns: repeat(5, 150px);
@@ -69,7 +59,11 @@
     height: 150px;
     overflow: hidden;
     border-radius: 100px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+}
+
+.traditions-list-item__img img {
+    width: 100%;
 }
 
 .traditions-list-item__point {
@@ -104,7 +98,7 @@
     width: 200px;
 }
 
-.traditions-list-item__footer a {
+.traditions-list-item__description a {
     color: var(--orange);
 }
 
@@ -118,17 +112,13 @@
         padding: 75px 50px 50px 50px;
     }
 
-    .traditions-scheme {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
     .traditions-scheme__wrap {
         transform: translateY(-100px);
         margin-bottom: -100px;
     }
 
     .traditions-list {
-        grid-gap: 0 40px;
+        grid-gap: 0 20px;
     }
 
     .traditions-list-item__point-wrap:after {
@@ -138,11 +128,26 @@
     .traditions-list__wrap {
         overflow-x: auto;
     }
+
+    .traditions-list-item__img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
+@media (max-width: 1230px) {
+    .traditions-scheme {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+
 @media (max-width: 1024px) {
-    .traditions-list--points {
-        display: none;
+
+    .traditions-scheme__wrap {
+        transform: translateY(-20px);
+        margin-bottom: -20px;
     }
 
     .traditions-scheme__content {
@@ -155,6 +160,7 @@
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
+        line-height: 1;
     }
 
     .traditions-list {
